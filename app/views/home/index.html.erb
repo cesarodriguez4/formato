@@ -1,2 +1,15 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div class="container">
+    <div class="left">
+        <h1>Generador de formato</h1>
+        <p>Sube un archivo de csv, excel o archivo de texto con la siguiente forma:</p>
+        <%= form_with(url: "#", method: "post", multipart: true) do %>
+            <%= file_field_tag :csv %>
+            <%= submit_tag "Enviar"%>
+        <%end %>
+    </div>
+    <div class="right">
+        <% @content.each do |element| %>
+                <%= element.html_safe %>
+        <% end %>
+    </div>
+</div>
