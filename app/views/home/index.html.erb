@@ -6,10 +6,8 @@
             <%= file_field_tag :csv %>
             <%= submit_tag "Enviar"%>
         <%end %>
-    </div>
-    <div class="right">
-        <% @content.each do |element| %>
-                <%= element.html_safe %>
+        <% if @file %>
+            <%= link_to "Descargar Archivo", "files/download/document" %>
         <% end %>
     </div>
 </div>

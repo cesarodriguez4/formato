@@ -7,6 +7,9 @@
 # Ignore bundler config.
 /.bundle
 
+# Ignore built document
+document.docx
+
 # Ignore the default SQLite database.
 /db/*.sqlite3
 /db/*.sqlite3-journal
@@ -35,3 +38,4 @@
 yarn-debug.log*
 .yarn-integrity
 /app/assets/test.csv
+
